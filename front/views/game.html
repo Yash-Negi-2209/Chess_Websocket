@@ -1,0 +1,33 @@
+<html>
+    <head>
+        {{> head}}
+    </head>
+    <body>
+
+        <style>
+            html{
+                position: relative;
+                top: -4%;
+                left: -2%;
+            }
+        </style>
+
+        <div style="background-color: rgb(0, 0, 0); height: 105%; position: fixed; width: 105%;">
+            <div id="myBoard" style="width: 700px; margin-left: 27rem; margin-top: 50px;"></div>
+            <label style="font-weight: bolder; color: white; margin-left: 50px;">STATUS:</label>
+            <div id="status" style="display: inline-block; font-weight: bolder; color: white;"></div>
+            <br>
+            <label style="font-weight: bolder; color: white; margin-left: 50px;">Previous Moves:</label>
+            <div id="pgn" style="font-weight: bolder; color: white;"></div>
+        </div>
+        
+        
+    
+        <script>
+            let playerColor = '{{color}}';
+            console.log('Playing as ' + playerColor);
+        </script>
+        <script src="/public/js/index.js"></script>
+
+    </body>
+</html>
